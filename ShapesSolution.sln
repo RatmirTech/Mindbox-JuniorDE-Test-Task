@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7B177EFD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesLibrary.Tests", "tests\ShapesLibrary.Tests\ShapesLibrary.Tests.csproj", "{F00D6BF3-7466-4C70-BEF5-8D2381146DF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesApp", "src\ShapesApp\ShapesApp.csproj", "{BF2EBD34-369D-4702-BC04-48DCB3E48485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +30,14 @@ Global
 		{F00D6BF3-7466-4C70-BEF5-8D2381146DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F00D6BF3-7466-4C70-BEF5-8D2381146DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F00D6BF3-7466-4C70-BEF5-8D2381146DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2EBD34-369D-4702-BC04-48DCB3E48485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2EBD34-369D-4702-BC04-48DCB3E48485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2EBD34-369D-4702-BC04-48DCB3E48485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2EBD34-369D-4702-BC04-48DCB3E48485}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BCF73AEA-0A71-48BA-AB15-7FA647036E48} = {F9A1367B-AE9B-422F-8A90-88E747AC7D26}
 		{F00D6BF3-7466-4C70-BEF5-8D2381146DF4} = {7B177EFD-B1A2-4A22-9FEE-1CE0F817B3D0}
+		{BF2EBD34-369D-4702-BC04-48DCB3E48485} = {F9A1367B-AE9B-422F-8A90-88E747AC7D26}
 	EndGlobalSection
 EndGlobal
