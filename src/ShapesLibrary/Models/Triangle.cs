@@ -75,6 +75,6 @@ public class Triangle : IShape
     {
         double[] sides = { A, B, C };
         Array.Sort(sides);
-        return Math.Pow(sides[0], 2) * Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+        return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
     }
 }
