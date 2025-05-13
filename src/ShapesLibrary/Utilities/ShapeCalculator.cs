@@ -12,5 +12,10 @@ public static class ShapeCalculator
     /// </summary>
     /// <param name="shape">Фигура</param>
     /// <returns>Площадь фигуры</returns>
-    public static double CalculateArea(IShape shape) => shape.Area();
+    public static double CalculateArea(IShape shape)
+    {
+        if (shape == null)
+            throw new ArgumentNullException(nameof(shape));
+        return shape.Area();
+    }
 }
