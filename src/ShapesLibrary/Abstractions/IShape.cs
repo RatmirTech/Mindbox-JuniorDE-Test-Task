@@ -3,6 +3,7 @@
 /// <summary>
 /// Интерфейс для фигур
 /// </summary>
+/// <inheritdoc/>
 public interface IShape
 {
     /// <summary>
