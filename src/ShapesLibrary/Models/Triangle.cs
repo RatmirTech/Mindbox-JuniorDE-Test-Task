@@ -71,10 +71,11 @@ public class Triangle : IShape
     /// Проверяет, является ли треугольник прямоугольным
     /// </summary>
     /// <returns>True, если треугольник прямоугольный</returns>
-    public bool IsRight()
+    /// <param name="correction">погрешность которую можно допустить из за <see langword="double"/></param>
+    public bool IsRight(double correction = 1e-6)
     {
-        double[] sides = { A, B, C };
-        Array.Sort(sides);
-        return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+        var s = new[] { A, B, C };
+        Array.Sort(s);
+        return Math.Abs(s[0] * s[0] + s[1] * s[1] - s[2] * s[2]) <= correction;
     }
 }
