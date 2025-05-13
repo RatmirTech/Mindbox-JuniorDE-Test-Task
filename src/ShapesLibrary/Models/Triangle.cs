@@ -66,4 +66,15 @@ public class Triangle : IShape
         double halfMeter = (A + B + C) / 2;
         return Math.Sqrt(halfMeter * (halfMeter - A) * (halfMeter - B) * (halfMeter - C));
     }
+
+    /// <summary>
+    /// Проверяет, является ли треугольник прямоугольным
+    /// </summary>
+    /// <returns>True, если треугольник прямоугольный</returns>
+    public bool IsRight()
+    {
+        double[] sides = { A, B, C };
+        Array.Sort(sides);
+        return Math.Pow(sides[0], 2) * Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+    }
 }
