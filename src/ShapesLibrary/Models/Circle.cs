@@ -3,19 +3,19 @@
 namespace ShapesLibrary.Models;
 
 /// <summary>
-/// Класс фигуры Круг
+/// Класс фигуры Круг. Реализует метод получения радиуса круга по радиусу.
 /// </summary>
 public class Circle : IShape
 {
     /// <summary>
-    /// Радиус круга. Радиус должен быть > 0
+    /// Радиус круга. Должен быть > 0
     /// </summary>
     public double Radius { get; }
 
     /// <summary>
     /// Создаёт экземпляр класса Круг с заданным радиусом.
     /// </summary>
-    /// <param name="radius">радиус круга</param>
+    /// <param name="radius">Радиус круга. Должен быть > 0</param>
     /// <exception cref="ArgumentException">Если радиус меньше или равен нулю</exception>
     public Circle(double radius)
     {
@@ -25,6 +25,11 @@ public class Circle : IShape
         Radius = radius;
     }
 
+    /// <summary>
+    /// Создаёт экземпляр класса Круг с заданным целочисленным радиусом.
+    /// </summary>
+    /// <param name="radius">Радиус круга. Должен быть > 0</param>
+    /// <exception cref="ArgumentException">Если радиус меньше или равен нулю</exception>
     public Circle(int radius)
         : this((double)radius)
     { }
